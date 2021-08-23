@@ -1,0 +1,127 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family:Andale Mono, monospace;
+  font-size:16px;
+}
+body {
+  margin:0;
+  background: #485563; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #485563, #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.flex-container {
+  display: flex;
+}
+.container {
+  max-width:1080px;
+  margin:20px auto;
+  flex-direction:column;
+  align-items:center;
+}
+.calculator {
+  position:relative;
+  flex-direction:column;
+  align-items:center;
+  width:416px;
+  border-radius:5px;
+  border: 8px solid #75879C;
+  background-color: #5D6E81;
+  -webkit-box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46); 
+  box-shadow: 1px 1px 22px 5px rgba(0,0,0,0.46);
+}
+.calculator > h3 {
+  text-transform: uppercase;
+  color:#fff;
+  letter-spacing:2px;
+  font-size:1.5rem;
+  margin:10px auto;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.calculator > .calculation-screen {
+  height: 30px;
+  background-color:#000;
+  width:95%;
+  word-wrap:break-word;
+  text-align:right;
+  color:#fff;
+  line-height:20px;
+  padding:5px;
+  font-size:1.5rem;
+}
+.calculator > .display-screen {
+  height:30px;
+  background-color:#000;
+  width:95%;
+  color:orange;
+  border-radius: 10px 10px 0 0;
+  text-align:right;
+  line-height:20px;
+  padding:5px;
+  font-size:1.2rem;
+}
+.calculator > .buttons {
+  margin: 10px auto;
+  width:95%;
+  display:block;
+}
+.buttons > button {
+  width:95px;
+  height:70px;
+  position:relative;
+  display:inline-block;
+  border:1px solid #759C76;
+  background-color:#5D815E;
+  font-size:2rem;
+  font-weight: solid;
+  color:#fff;
+  border-radius:10px;
+}
+.buttons > button:hover {
+  color:#000;
+ -webkit-box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, inset 0px 0px 0px 0px rgba(0,0,0,0); 
+box-shadow: inset 0px 0px 8px 5px #000, 2px 5px 16px 0px #0B325E, inset 0px 0px 0px 0px rgba(0,0,0,0);
+  border: none;
+}
+.buttons > #clear {
+  width:190px;
+  height:70px;
+  background-color:#BC4348;
+  border:2px solid #C9696D;
+}
+.buttons > #clear:hover {
+  border: none;
+  cursor:pointer;
+}
+.buttons > #divide, #multiply, #subtract, #add {
+  background-color:#5D8170;
+  border:2px solid #759C8A;
+}
+.buttons > #divide:hover, #multiply:hover, #subtract:hover, #add:hover {
+  border: none;
+}
+.buttons > #equals {
+  height:140px;
+  position:absolute;
+  bottom:10px;
+  background-color: #815D80;
+  border:2px solid #9C759B;
+}
+.buttons > #equals:hover {
+  border: none;
+  cursor:pointer;
+}
+.buttons > #zero {
+  width:190px;
+}
+.design-by {
+  flex-direction: column;
+  align-items: center;
+  color:#fff;
+  font-size:1.125rem;
+  letter-spacing:1px;
+}
