@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size:16px;
+  font-family:Times, serif;
+}
+body {
+  margin:0;
+  background: #00b09b; 
+}
+.flex-container {
+  display:flex;
+}
+.container {
+  flex-direction:column;
+  align-items:center;
+  max-width:1080px;
+  margin:30px auto;
+}
+.container > h1 {
+  color:#fff;
+  font-size:2.5rem;
+  margin-bottom:0;
+}
+.container > .clock {
+  width:450px;
+  height:250px;
+  background-color:#B00015;
+  border:1px solid 000;
+  border-radius:15px;
+  padding: 15px;
+  flex-direction:column;
+  align-items:center;
+  -webkit-box-shadow: 0px 2px 15px 3px #000000; 
+  box-shadow: 0px 2px 15px 3px #000000;
+}
+.container > .clock > h3 {
+  margin:0;
+  margin-bottom:5px;
+  color:#fff;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.container > .clock > h4 {
+  color: #fff;
+  max-width: 45%;
+  text-align:center;
+  font-weight:normal;
+  line-height:1.2em;
+  letter-spacing:1px;
+  margin-top:15px;
+}
+.container > .clock > .clock-screen {
+  width:95%;
+  height: 98%;
+  border:1px solid #00E3C8;
+  border-radius:15px;
+  background-color:#00B09B;
+  text-align:center;
+  padding-top:10px;
+  color:#fff;
+  letter-spacing:5px;
+  font-size:6rem;
+}
+.container > .length-controls {
+  flex-direction: row;
+  margin:30px auto;
+}
+.container > .length-controls > .length-control {
+  flex-direction:column;
+  align-items:center;
+  margin:0 30px;
+}
+.container > .length-controls > .length-control > #break-label, #session-label {
+  color:#fff;
+  font-size:1.5rem;
+  letter-spacing:2px;
+}
+.container > .length-controls > .length-control > .break-label-controls {
+  flex-direction:row;
+  align-items:center;
+}
+.container > .length-controls > .length-control > .break-label-controls > #break-length, #session-length {
+  font-size:1.5rem;
+  margin:0 15px;
+  color:#fff;
+  font-weight:bold;
+}
+.container > .length-controls > .length-control > .break-label-controls > i {
+  color:#fff;
+}
+.container > .length-controls > .length-control > .break-label-controls > i:hover {
+  color:#9B00B0;
+  cursor:pointer;
+}
+.container > .clock-controls {
+  flex-direction: row;
+  margin-top:20px;
+}
+.container > .clock-controls > i {
+  margin:0 10px;
+  color:#fff;
+}
+.container > .clock-controls > i:hover {
+  color:#9B00B0;
+  cursor:pointer;
+}
