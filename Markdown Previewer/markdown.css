@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size:16px;
+  font-family: Times New Roman, serif;
+}
+body {
+  margin:0;
+  background-color: #87b5b5;
+}
+.flex-container {
+  display:flex;
+}
+.container {
+  margin: 20px auto;
+  max-width:1080px;
+  flex-direction: column;
+  align-items: center;
+}
+.editor-area, .preview-area {
+  flex-direction:column;
+  margin: 10px;
+  -webkit-box-shadow: 0px 7px 19px -1px rgba(0,0,0,0.95); 
+  box-shadow: 0px 7px 19px -1px rgba(0,0,0,0.95);
+}
+.editor-area {
+  max-width: 100%;
+}
+.preview-area {
+  width:900px;
+}
+.editor-name, .previews-name {
+  padding: 5px;
+  background-color: #4aa3a3;
+  border:1px solid black;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-between;
+  width:100%;
+}
+.editor-name > :nth-child(2), .previews-name > :nth-child(2) {
+  margin:0 10px;
+}
+.editor-name > :nth-child(2):hover {
+  cursor:pointer;
+  color: #66BABA;
+  transition:color 300ms ease-in-out;
+}
+.previews-name > :nth-child(2):hover {
+  cursor:pointer;
+  color: #66BABA;
+  transition:color 300ms ease-in-out;
+}
+.editor-name-text, .previews-name-text {
+  flex-direction: row; 
+  align-items: center;
+  margin:0;
+}
+.editor-name-text > p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin:0 0 0 10px;
+}
+.previews-name-text > p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin:0 0 0 10px;
+}
+#editor, #preview {
+  border: 1px solid black;
+  width:100%;
+  background-color: #C0D8D8;
+  padding: 10px;
+  max-width:100%;
+  font-size: 1rem;
+}
+#preview {
+  border: 1px solid black;
+  width:100%;
+  background-color: #C0D8D8;
+  padding: 10px;
+  max-width:100%;
+  font-size: 1rem;
+  overflow-y: auto;
+}
+#preview code {
+  background: white;
+  padding: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+#preview pre {
+  background: white;
+  padding: 5px;
+}
+#preview text {
+  margin:0;
+}
+#preview table {
+  border-collapse: collapse;
+}
+#preview blockquote {
+  border-left: 3px solid gray;
+  color: gray;
+  padding-left: 5px;
+  margin-left: 25px;
+}
+#preview td,
+#preview th {
+  border: 2px solid gray;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#preview ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin: 10px 0;
+}
+#preview ol {
+  margin: 0 10px;;
+}
+#preview img {
+  max-width:90%;
+}
